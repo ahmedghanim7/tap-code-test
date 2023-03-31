@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap");
+
+:root {
+  --body_bg: #c5c5c5;
+  --primary: #8132a3;
+  --light: #eeeeee;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--body_bg);
+}
+.personal-card {
+  width: 250px;
+  background-color: var(--white);
+  border-radius: 6px;
+  border-top: 10px solid var(--primary);
+  padding: 30px 20px;
+}
+.image-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.user-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.user-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.user-info-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--light);
+  padding-bottom: 10px;
+}
+.user-info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.user-info-item label {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.user-info-item span {
+  font-size: 14px;
+  font-weight: 600;
+}
